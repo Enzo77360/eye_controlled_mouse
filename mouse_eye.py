@@ -61,7 +61,7 @@ while True:
 
     # Détection d'un clignement d'œil (si l'écart vertical entre les deux points est inférieur à 0.004)
     if (left[0].y - left[1].y) < 0.004:
-
+        print('click')  # Affichage d'un message de débogage
         pyautogui.click()  # Émission d'un clic de souris
         pyautogui.sleep(1)  # Pause d'une seconde
 
