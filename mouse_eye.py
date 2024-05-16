@@ -10,8 +10,10 @@ face_mesh = mp.solutions.face_mesh.FaceMesh(refine_landmarks=True)
 
 # Obtention des dimensions de l'écran à l'aide de PyAutoGUI
 screen_w, screen_h = pyautogui.size()
+'''
 # Désactivation du fail-safe de PyAutoGUI (non recommandé dans un environnement de production)
 pyautogui.FAILSAFE = False
+'''
 # Boucle infinie pour traiter les images de la caméra en continu
 while True:
     # Lecture d'une image depuis la caméra
